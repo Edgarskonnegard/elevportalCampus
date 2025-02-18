@@ -1,0 +1,127 @@
+header {
+    position: sticky;
+    display: flex;
+    flex-direction: row;   
+    flex-wrap: wrap; 
+    justify-content: flex-end;  
+    padding: 10px 10px 10px 10px;
+    margin: 0;
+    width: 100%;
+    height: 10vw;   
+    background: linear-gradient(90deg, rgb(255, 217, 113) 45%, rgb(255, 173, 41) 100%);
+    z-index: 1000;
+}
+
+body {
+    background-image: url('..//IMAGES/campusnatt.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-bottom: 50px; /* Detta lägger till lite utrymme under hela body */
+}
+
+main {
+    display: flex;
+    flex-direction: row;           
+    justify-content: center;        
+    height: auto;  /* Låt höjden vara automatisk */
+    min-height: 100vh;
+    position: relative;
+    padding-top: 0vw;
+    padding-bottom: 50px; /* Justera här om du vill ha mer utrymme */
+    margin-bottom: 50px;  /* Lägg till här för att öka marginalen vid botten */
+}
+
+header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 15px;
+}
+
+header h1 {   
+   margin-right: 10px;  
+}
+
+.mainlinks {
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+    justify-content: center;    
+    background-color: beige;
+    margin: 40px;   
+}
+
+.mainbutton {
+    width: 300px;
+    border: 1px solid black; 
+    margin: 10px;
+}
+
+.schema {
+    height: 50%;    
+    border: 1px solid black;   
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;  
+    width: 20%;     
+    height: 70vw;    
+    background-color: chocolate;
+    min-width: 20%; 
+}
+
+.mainView {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    margin-top: 20vw;  /* Justera för att finjustera avståndet */
+    position: relative;
+    background-attachment: fixed;
+    padding-bottom: 50px;  /* Justera för att öka bottenmarginal */
+}
+
+.welcomeMessage {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: rgba(230, 228, 228, 0.949);
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    border: 5px solid rgb(249, 184, 8);
+}
+
+.welcomeMessage ul li {
+    list-style: none;
+}
+
+.welcomeLinks {
+    position: relative;
+    display: flex;
+    padding: 10px 15px;
+    margin: 5px;
+    margin-bottom: 50px;  /* Här kan du justera för att ge mer utrymme */
+    border-radius: 15px;
+    background-color: rgb(230, 228, 228);
+    z-index: 1;
+    border: 5px solid rgb(249, 184, 8);
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('..//IMAGES/campusnatt.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+}
